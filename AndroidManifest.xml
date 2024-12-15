@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0"
+    package="com.craftechgroup.www.jissms"
+    platformBuildVersionCode="25"
+    platformBuildVersionName="7.1.1">
+
+    <uses-sdk
+        android:minSdkVersion="25"
+        android:targetSdkVersion="25" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:theme="@ref/0x7f08009c"
+        android:label="@ref/0x7f060021"
+        android:icon="@ref/0x7f030005"
+        android:debuggable="true"
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:roundIcon="@ref/0x7f030006">
+
+        <activity
+            android:name="com.craftechgroup.www.jissms.ItDashboardActivity" />
+
+        <activity
+            android:name="com.craftechgroup.www.jissms.ItFacultyActivity" />
+
+        <activity
+            android:name="com.craftechgroup.www.jissms.ItStudentActivity" />
+
+        <activity
+            android:name="com.craftechgroup.www.jissms.ItFacultyProfileActivity" />
+
+        <activity
+            android:name="com.craftechgroup.www.jissms.ItStudentProfileActivity" />
+
+        <activity
+            android:name="com.craftechgroup.www.jissms.ItShowAllStudentsActivity" />
+
+        <activity
+            android:name="com.craftechgroup.www.jissms.ItShowSingleRecordActivity" />
+
+        <activity
+            android:name="com.craftechgroup.www.jissms.ItShowAllCourseActivity" />
+
+        <activity
+            android:name="com.craftechgroup.www.jissms.ItCourseShowSingleRecordActivity" />
+
+        <activity
+            android:name="com.craftechgroup.www.jissms.ItShowAllExamActivity" />
+
+        <activity
+            android:name="com.craftechgroup.www.jissms.ItExamShowSingleRecordActivity" />
+
+        <activity
+            android:name="com.craftechgroup.www.jissms.ItPdfUploadActivity" />
+
+        <activity
+            android:name="com.craftechgroup.www.jissms.ItPdfDownload" />
+
+        <activity
+            android:name="com.craftechgroup.www.jissms.ItPdfDownloadActivity" />
+
+        <activity
+            android:name="com.craftechgroup.www.jissms.MainActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="net.gotev.uploadservice.UploadService"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+</manifest>
